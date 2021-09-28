@@ -88,6 +88,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\ПК\mp2-lab1-set\sln\vs19\lab1_bitfields\lab1_bitfields\x64\Debug;C:\Users\ПК\mp2-lab1-set\sln\vs19\lab1_bitfields\bitfield;C:\Users\ПК\mp2-lab1-set\sln\vs19\lab1_bitfields\bitfield\x64\Debug</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
