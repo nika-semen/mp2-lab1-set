@@ -1,10 +1,12 @@
 ﻿// Тестирование битового поля и множества
 #include <iomanip>
-#//define USE_SET // Использовать класс TSet, закоментировать, чтобы использовать битовое поле
+#define USE_SET // Использовать класс TSet, закоментировать, чтобы использовать битовое поле
+#include "tset.h"
 #ifndef USE_SET // Использовать класс TBitField
 #include "tbitfield.h"
 
-int main()
+
+int main1()
 {
   int n, m, k, count;
 
@@ -45,7 +47,7 @@ int main()
 
 #include "tset.h"
 
-int main()
+int main1()
 {
   int n, m, k, count;
 
@@ -80,15 +82,24 @@ int main()
     }
   cout << endl;
   cout << "В первых " << n << " числах " << count << " простых" << endl;
+  return 0;
 }
 
 #endif
 
-
-/*
 int main()
 {
-	TBitField bf(1);
+    const int size = 4;
+    const int k = 3;
+    TSet set(size), updatedSet(size);
+    set.InsElem(0);
+    set.InsElem(2);
+    cout << set << endl;
+    updatedSet = set + k;
+    cout << updatedSet << endl;
 
-	return 0;
-}*/
+    //EXPECT_NE(0, updatedSet.IsMember(k));
+   
+
+    
+}
