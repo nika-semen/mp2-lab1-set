@@ -3,7 +3,7 @@
 #define __BITFIELD_H__
 #include <iostream>
 using namespace std;
-typedef unsigned long long int TELEM;
+typedef unsigned int TELEM;
 
 class TBitField // класс битовое поле
 {private:
